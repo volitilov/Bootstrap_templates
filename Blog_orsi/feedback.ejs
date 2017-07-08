@@ -1,11 +1,13 @@
 <section>
 	<% include components/_breadcrumb %>
-	<div class="container signin">
+	<div class="container-fluid feedback">
 		<div class="row">
-			<div class="col-md-6 sign-up">
+			<div class="col-md-6">
 				<div class="card">
-					<div class="card-header">Sign up form</div>
+					<div class="card-header">Feedback contacts form</div>
 					<div class="card-block">
+						<p>Hi <code>{ name of contacts form }</code>, your letter has been received and will be viewed in the near future, If my letter for a long time no, check the spam folder.</p>
+						<p>In general, I'm constantly in touch here:</p>
 						<ul class="social-links">
 							<li><a href="https://www.facebook.com/volitilov" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#" title="google-plus"><i class="fa fa-google-plus"></i></a></li>
@@ -13,35 +15,15 @@
 							<li><a href="https://ok.ru/profile/567774078600" title="odnoklassniki" target="_blank"><i class="fa fa-odnoklassniki"></i></a></li>
 							<li><a href="https://vk.com/volitilov" title="vk" target="_blank"><i class="fa fa-vk"></i></a></li>
 						</ul>
-						<p>or</p>
-						<form action="/" method="post">
-							<label>
-								<span>Login:</span>
-								<span><input type="text" name="name" placeholder="name" required></span>
-							</label>
-
-							<label>
-								<span>Email:</span>
-								<span><input type="email" name="email" placeholder="@email" required></span>
-							</label>
-
-							<label>
-								<span>Password:</span>
-								<span><input type="password" name="password" value="" placeholder="password" required></span>
-							</label>
-
-							<button type="submit" class="btn btn-primary">Sign up</button>
-						</form>
-						<div class="more-links">
-							<a href="#" title="Sign in">Sig in</a>
-						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 sign-in">
+			<div class="col-md-6">
 				<div class="card">
-					<div class="card-header">Sign in form</div>
+					<div class="card-header">Feedback subscribe form</div>
 					<div class="card-block">
+						<p>An email <code>{ email of subscribe form }</code> has been sent to confirm the subscription, please activate the subscription. If there is no email for a long time, check the spam folder.</p>
+						<p>Also news can be received in social networks. Follow me.</p>
 						<ul class="social-links">
 							<li><a href="https://www.facebook.com/volitilov" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#" title="google-plus"><i class="fa fa-google-plus"></i></a></li>
@@ -49,27 +31,10 @@
 							<li><a href="https://ok.ru/profile/567774078600" title="odnoklassniki" target="_blank"><i class="fa fa-odnoklassniki"></i></a></li>
 							<li><a href="https://vk.com/volitilov" title="vk" target="_blank"><i class="fa fa-vk"></i></a></li>
 						</ul>
-						<p>or</p>
-						<form action="/" method="post">
-							<label>
-								<span>Login:</span>
-								<span><input type="text" name="name" placeholder="name" required></span>
-							</label>
-
-							<label>
-								<span>Password:</span>
-								<span><input type="password" name="password" value="" placeholder="password" required></span>
-							</label>
-
-							<button type="submit" class="btn btn-primary">Sign in</button>
-						</form>
-						<div class="more-links">
-							<a href="#" title="Registration">Registration</a>
-							<a href="#" title="Forgot your password?">Forgot your password?</a>
-						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
-	</div>	
+	</div>
 </section>

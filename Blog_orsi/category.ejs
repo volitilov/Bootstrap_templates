@@ -1,18 +1,9 @@
 <section>
 	<% include components/_breadcrumb %>
-	<div class="container">
+	<div class="category container-fluid">
 		<div class="row">
 			<div class="col-md-8">
-				<div class="card">
-					<div class="card-header">
-						Featured
-					</div>
-					<div class="card-block">
-						<h4 class="card-title">Special title treatment</h4>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>
+				<% include components/_card_img_all %>
 				<div class="card card-inverse" style="background-color: #333; border-color: #333;">
 					<div class="card-block">
 						<h3 class="card-title">Special title treatment</h3>
@@ -20,7 +11,8 @@
 						<a href="#" class="btn btn-primary">Go somewhere</a>
 					</div>
 				</div>
-				<nav aria-label="...">
+				<% include components/_card_img_all %>
+				<nav>
 					<ul class="pagination justify-content-end">
 						<li class="page-item disabled">
 							<a class="page-link" href="#" tabindex="-1">Previous</a>

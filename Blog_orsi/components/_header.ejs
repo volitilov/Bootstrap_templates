@@ -5,16 +5,16 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<!-- Image and text -->
-			<nav class="navbar navbar-light brand">
+			<nav class="navbar navbar-light brand" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
 				<a class="navbar-brand" href="/">
 					<img src="/img/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-					Bootstrap
+					Orsi
 				</a>
 			</nav>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<form class="form-inline ml-auto">
-					<input class="form-control mr-sm-2" type="text" placeholder="Search" autofocus>
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
 				</form>
 				<ul class="navbar-nav">
 					<li class="nav-item active">
@@ -25,11 +25,12 @@
 							Category
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item color-primary" href="#">Category 1</a>
-							<a class="dropdown-item color-success" href="#">Category 2</a>
-							<a class="dropdown-item color-info" href="#">Category 3</a>
-							<a class="dropdown-item color-warning" href="#">Category 4</a>
-							<a class="dropdown-item color-danger" href="#">Category 5</a>
+							<a class="dropdown-item badge badge-default" href="#">Category 1</a>
+							<a class="dropdown-item badge badge-primary" href="#">Category 2</a>
+							<a class="dropdown-item badge badge-success" href="#">Category 3</a>
+							<a class="dropdown-item badge badge-info" href="#">Category 4</a>
+							<a class="dropdown-item badge badge-warning" href="#">Category 5</a>
+							<a class="dropdown-item badge badge-danger" href="#">Category 6</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -39,16 +40,16 @@
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="/category">Category</a>
 							<a class="dropdown-item" href="/single_page">Single page</a>
+							<a class="dropdown-item" href="/signin">Signin</a>
+							<a class="dropdown-item" href="/404">404 page</a>
+							<a class="dropdown-item" href="/feedback">Feedback</a>
 						</div>
 					</li>
 					<li class="nav-item">
-						<a href="/contacts" title="Signin" class="btn btn-outline-primary">Contacts</a>
-					</li>
-					<li class="nav-item">
-						<a href="signin" title="Signin" class="btn btn-primary">Signin</a>
+						<a href="/contacts" title="Signin" class="btn btn-primary">Contacts</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-</header><!-- /header -->
+</header>
