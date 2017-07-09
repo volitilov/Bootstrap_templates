@@ -1,5 +1,5 @@
 .contacts {
-	padding-top: 50px;
+	padding-top: 10px;
 	padding-bottom: 50px;
 	.blog-admin {
 		.card-block {
@@ -15,9 +15,10 @@
 		}
 	}
 	.contacts-form {
+		margin-top: 20px;
 		form {
 			text-align: left;
-			padding: 0px 80px;
+			padding: 0px 20px;
 			label {
 				display: block;
 				span {
@@ -25,6 +26,8 @@
 					vertical-align: middle;
 				}
 				input, textarea {
+					border-radius: 4px;
+					border: 1px solid #ddd;
 					width: 100%;
 					margin: 10px 0px;
 					padding: 6px 12px; 
@@ -36,4 +39,32 @@
 			}
 		}
 	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.contacts {
+		padding-top: 50px;
+		.contacts-form {
+			margin-top: 0px;
+		}
+		.social-links li {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.contacts {
+		.contacts-form {
+			form {
+				padding: 0px 80px;
+			}
+		}
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+		
 }
