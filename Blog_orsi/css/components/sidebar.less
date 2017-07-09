@@ -17,19 +17,19 @@
 			}
 		}
 	}
+	.tab-content {
+		margin-top: 20px;
+	}
 	.sidebar-post {
-		margin: 30px 0px;
-		display: block;
+		margin: 10px 0px;
+		border-bottom: 1px solid #ddd;
 		.sidebar-post-img {
-			width: 35%;
-			display: block;
-			float: left;
+			margin-bottom: 15px;
 		}
 		.sidebar-post-description {
-			width: 65%;
-			float: right;
-			padding-left: 10px;
 			border-radius: 4px;
+			color: #777;
+			font-size: 14px;
 		}
 		img {
 			width: 100%;
@@ -39,13 +39,34 @@
 	}
 	.subscribe {
 		.subscribe-form;
+		padding-bottom: 30px;
 		padding-top: 30px !important;
 		color: #fff;
+		p {
+			color: #fff;
+		}
 		input {
 			margin-bottom: 15px;
 		}
-		button {
-			
-		}
 	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.sidebar {
+		padding-right: 0px;
+		.sidebar-post-img {
+			padding: 0px;
+		}
+		
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	
 }

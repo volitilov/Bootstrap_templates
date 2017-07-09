@@ -1,18 +1,11 @@
 .category {
-	padding: 0px 107px;
 	.card {
 		margin-bottom: 20px;
 	}
-	.card-body {
-		padding: 20px;
-	}
 	.card-img {
-		width: 30%;
-		float: left;
+		margin-bottom: 20px;
 	}
 	.card-description {
-		width: 70%;
-		float: right;
 		padding-left: 20px;
 		ul {
 			padding: 0px;
@@ -22,13 +15,26 @@
 				list-style: none;
 				margin-left: 3px;
 				a {
-					padding: 3px 5px;
+					padding: 5px 7px;
 				}
 			}
 		}
+		p {
+			font-size: 15px;
+			color: #777;
+		}
 		.link-post {
 			padding: 0px;
-			float: right;
+		}
+	}
+	.card-img-all {
+		.btn {
+			margin-left: 20px;
+			background-color: #f5f5f5;
+			color: #777;
+			&:hover {
+				background-color: #eee;
+			}
 		}
 	}
 	.card-header {
@@ -37,10 +43,42 @@
 			vertical-align: middle;
 		}
 		span:last-child {
-			float: right;
 			font-size: 13px;
 			color: #777;
 			padding-top: 3px;
 		}
 	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.category {
+		.category-list {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.card-img {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.card-description {
+			
+		}
+		.card-header {
+			span:last-child {
+				float: right;
+			}
+		}
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }

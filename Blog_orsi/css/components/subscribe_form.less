@@ -1,14 +1,20 @@
 .subscribe-form {
 	padding: 30px;
+	color: rgba(255, 255, 255, .7);
+	h3 {
+		color: #444;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
 	form {
-		margin: 20px;
+		margin: 0px;
+		margin-top: 20px;
 	}
 	input {
 		padding: 7px 15px;
 		background-color: transparent;
 		border: 1px solid #ddd;
 		border-radius: 4px;
-		color: #ddd;
 		&:focus {
 			background-color: #fff;
 			color: #000;
@@ -19,10 +25,31 @@
 		border: none;
 		border-radius: 4px;
 		padding: 8px 30px;
-		margin-left: 5px;
+		margin-top: 15px;
 		&:hover {
 			cursor: pointer;
 			background-color: #ddd;
 		}
 	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.subscribe-form {
+		form {
+			margin: 20px;
+		}
+		button {
+			margin-left: 5px;
+		}
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	
 }

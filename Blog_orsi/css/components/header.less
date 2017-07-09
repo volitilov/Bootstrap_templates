@@ -4,6 +4,7 @@
 	padding-bottom: 15px;
 	border-bottom: 1px solid #eee;
 	.container {
+		margin: 0px;
 		padding: 0px;
 	}
 	.nav-item {
@@ -19,6 +20,23 @@
 		padding: 8px;
 		margin: 5px 0px;
 	}
+	.navbar-toggler {
+		padding: 8px 20px;
+		padding-right: 8px;
+		z-index: 9999;
+		&:focus {
+			outline: none;
+		}
+	}
+	.navbar-collapse {
+		padding: 40px 20px;
+	}
+	.pages {
+		.badge-default {
+			background-color: #eee;
+			color: #555;
+		}
+	}
 	input {
 		border-color: #ddd;
 		background-color: transparent;	
@@ -28,3 +46,28 @@
 		}
 	}
 }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.header {
+		.container {
+			margin: auto;
+		}
+		.navbar-toggler {
+			margin-right: -25px;
+		}
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.header {
+		.navbar-collapse {
+			padding: 10px;
+			padding-right: 0px;
+		}
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
